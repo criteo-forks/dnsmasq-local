@@ -44,6 +44,10 @@ class Chef
                   config_dir: '/etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new'
                 }
 
+      def diff
+        '' # dummy implementation of diff command. this is required for chef version >= 12.13
+      end
+
       #
       # Allow individual attributes to be fed in and merged with the default
       # environment without blowing away the entire thing.
